@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+
+    android:layout_marginRight="3dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="#eceff1"
+        android:hardwareAccelerated="true"
+        card_view:cardElevation="100dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+             <ImageView
+                android:scaleType="centerCrop"
+                 android:id="@+id/image"
+                 android:src="@drawable/noimage"
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp">
+             </ImageView
+>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                  android:layout_below="@+id/image"
+                android:text="BATMAN VS SUPERMAN"
+                android:textAppearance="?attr/textAppearanceListItem" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/title"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="DC COMICS" />
+            <Button
+                android:id="@+id/more_button"
+                android:text="VER"
+                android:padding="0dp"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/author"
+                android:layout_marginRight="10dp"
+                android:layout_width="100dp"
+                style="?android:attr/buttonStyleSmall"
+                android:textColor="@android:color/white"
+                android:background="@color/design_default_color_primary"
+                android:layout_height="30dp">
+
+            </Button>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
